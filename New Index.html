@@ -72,7 +72,7 @@
       transform: translateY(-30px);
     }
 
-    /* FIXED IMAGE + HOVER */
+    /* IMAGE */
     .pic_boarder {
       width: 100%;
       max-width: 420px;
@@ -81,12 +81,10 @@
       object-fit: cover;
       object-position: 50% 20%;
 
-   .pic_boarder {
-  border: 3px solid transparent;
-  background: 
-    linear-gradient(#1a1a1a, #3a3a3a) padding-box,
-    linear-gradient(135deg, #c8b050, #ffffff) border-box;
-}
+      border: 3px solid transparent;
+      background: 
+        linear-gradient(#1a1a1a, #3a3a3a) padding-box,
+        linear-gradient(135deg, #c8b050, #ffffff) border-box;
 
       padding: 0;
 
@@ -106,6 +104,31 @@
       box-shadow: 
         0 25px 60px rgba(0,0,0,0.8),
         0 0 35px rgba(200,176,80,0.7);
+    }
+
+    /* ACCESSIBILITY FEATURES */
+    .high-contrast {
+      background: #000 !important;
+      color: #fff !important;
+    }
+
+    .high-contrast nav {
+      background: #111 !important;
+    }
+
+    .high-contrast .btn-custom,
+    .high-contrast .btn-info,
+    .high-contrast .btn-warning {
+      background: #fff !important;
+      color: #000 !important;
+    }
+
+    .large-text {
+      font-size: 1.5em;
+    }
+
+    .large-text * {
+      font-size: 1.1em;
     }
 
     footer {
