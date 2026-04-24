@@ -97,16 +97,22 @@
     }
 
    .pic_boarder {
-  max-width: 320px;
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: top;
+  width: 320px;
+  height: 420px;        /* MUST be fixed */
+  
+  object-fit: cover;    /* enables zoom/crop */
+  object-position: top; /* focus on face */
 
   border: 3px solid #c8b050;
   border-radius: 18px;
-  padding: 8px;
-  background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
+  padding: 0; /* IMPORTANT: remove padding for proper crop */
+
+  box-shadow: 
+    0 12px 30px rgba(0,0,0,0.6),
+    0 0 20px rgba(200,176,80,0.3);
+
+  display: block;
+  margin: 0 auto;
 }
 
     /* FOOTER FIXED TO BOTTOM */
