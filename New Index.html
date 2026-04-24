@@ -79,33 +79,17 @@
 }
 
     .pic_boarder {
-      max-width: 320px; /* slightly bigger now */
-      width: 100%;
-      height: auto;
+  width: 100%;
+  max-width: 420px;   /* bigger image */
+  height: 500px;      /* creates zoom frame */
 
-      border: 3px solid #c8b050;
-      border-radius: 18px;
-
-      padding: 8px;
-      background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
-
-      box-shadow: 
-        0 12px 30px rgba(0,0,0,0.6),
-        0 0 20px rgba(200,176,80,0.3);
-
-      transition: all 0.3s ease;
-    }
-
-   .pic_boarder {
-  width: 320px;
-  height: 420px;        /* MUST be fixed */
-  
-  object-fit: cover;    /* enables zoom/crop */
-  object-position: top; /* focus on face */
+  object-fit: cover;  
+  object-position: 50% 20%; /* focuses on face */
 
   border: 3px solid #c8b050;
   border-radius: 18px;
-  padding: 0; /* IMPORTANT: remove padding for proper crop */
+
+  padding: 0; /* important */
 
   box-shadow: 
     0 12px 30px rgba(0,0,0,0.6),
